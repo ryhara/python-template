@@ -1,0 +1,19 @@
+version: '3'
+
+tasks:
+  default:
+    desc: list all tasks
+    cmds:
+    - task --list --sort none
+  init:
+    desc: install pre-commit and npm dependencies
+    cmds:
+    - pre-commit install
+    - pre-commit autoupdate
+    - npm install
+    - npm run prepare
+  commit:
+    desc: commit
+    aliases: [c]
+    cmds:
+    - npm run commit

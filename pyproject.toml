@@ -1,0 +1,14 @@
+[project]
+name = "python-template"  # change this to your project name
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv]
+dev-dependencies = [
+  "mypy>=1.14.1",
+  "ruff>=0.9.3",
+  "types-requests>=2.32.0.20241016"
+]
