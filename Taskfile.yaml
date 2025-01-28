@@ -18,3 +18,8 @@ tasks:
     aliases: [c]
     cmds:
     - npm run commit
+  push:
+    desc: push
+    aliases: [p]
+    cmds:
+    - git push origin main
